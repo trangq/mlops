@@ -12,7 +12,7 @@ logging.basicConfig(
 logger = logging.getLogger("housing_predict_mlflow")
 
 # Set MLflow tracking URI (should match training script)
-mlflow.set_tracking_uri("file:./mlruns")
+mlflow.set_tracking_uri(uri="http://127.0.0.1:5000/") 
 
 
 def load_model_from_mlflow(model_name="housing_price_predictor", version="latest"):

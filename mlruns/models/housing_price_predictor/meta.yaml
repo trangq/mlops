@@ -1,7 +1,7 @@
 aliases: {}
-creation_timestamp: 1761382271658
+creation_timestamp: 1761992677157
 deployment_job_id: null
 deployment_job_state: null
-description: null
-last_updated_timestamp: 1761382617554
+description: ''
+last_updated_timestamp: 1761992677218
 name: housing_price_predictor

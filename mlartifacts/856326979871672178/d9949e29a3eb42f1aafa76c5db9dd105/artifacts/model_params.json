@@ -1,0 +1,7 @@
+{
+  "max_iter": 5000,
+  "tol": 0.001,
+  "learning_rate": "optimal",
+  "random_state": 20,
+  "model_name": "SGDRegressor"
+}

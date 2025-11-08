@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-mlflow.set_tracking_uri(uri="http://localhost:8080")
+mlflow.set_tracking_uri(uri="http://127.0.0.1:5001/") 
 
 # Configure logging
 logging.basicConfig(
