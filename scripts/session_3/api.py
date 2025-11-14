@@ -1,5 +1,5 @@
 from enum import Enum
-
+import os
 import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -49,4 +49,5 @@ def calculate(request: CalculateRequest) -> CalculateResponse:
 
 
 if __name__ == "__main__":
-    uvicorn.run("scripts.session_3.api:app", host="0.0.0.0", port=3000, reload=True)
+    port = int(os.environ.get("PORT", 8080))  # <- Cloud Run và Docker sẽ dùng PORT
+    uvicorn.run("scripts.session_3.api:app", host="0.0.0.0", port=port, reload=False)
